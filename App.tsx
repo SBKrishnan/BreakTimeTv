@@ -1,9 +1,11 @@
+import {NavigationContainer} from '@react-navigation/native';
 import {StyleSheet, Text, View} from 'react-native';
+import RootStack from './src/navigation/RootStack';
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <NavigationContainer>
+      <RootStack />
+    </NavigationContainer>
   );
 };
 export default App;
